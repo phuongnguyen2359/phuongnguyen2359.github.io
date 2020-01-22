@@ -18,11 +18,8 @@
       }
 
       function getAddress (latitude, longitude) {
-        console.log("get address...")
         window.latitude = latitude
         window.longitude = longitude
-        const url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyADtvOcNySBvdcfjg4E0JKgWddUWldCW8k`
-        console.log(url)
   $.ajax(url)
   .then(
     function success (response) {
